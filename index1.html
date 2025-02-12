@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation Dashboard</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Smart Farming Overview</h1>
+        </header>
+        <main>
+            <section class="sensors">
+                <div class="card">
+                    <h2>Temperature</h2>
+                    <p id="temperature">28°C</p>
+                </div>
+                <div class="card">
+                    <h2>Humidity</h2>
+                    <p id="humidity">28%</p>
+                </div>
+                <div class="card">
+                    <h2>Soil Moisture</h2>
+                    <p id="soil-moisture">0%</p>
+                </div>
+            </section>
+            
+            <section class="sprinklers">
+                <div class="card" id="automatic-irrigation-card">
+                    <h2>Automatic Irrigation</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="automatic-irrigation-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="card" id="automatic-irrigation-status-card">
+                    <h2>Irrigation Status</h2>
+                    <h2 id="automatic-irrigation-status">Active</h2>
+                </div>
+                <div class="card" id="manual-irrigation-card" style="display: none;">
+                    <h2>Manual Irrigation</h2>
+                    <label class="switch">
+                        <input type="checkbox" id="manual-irrigation-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
